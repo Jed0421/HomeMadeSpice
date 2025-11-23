@@ -46,14 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DashboardUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardUC.Designer.cs">
+      <DependentUpon>DashboardUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InventoryUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InventoryUC.Designer.cs">
+      <DependentUpon>InventoryUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="POSUC.Designer.cs">
+      <DependentUpon>POSUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportUC.Designer.cs">
+      <DependentUpon>ReportUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashboardUC.resx">
+      <DependentUpon>DashboardUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +106,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pos-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-inventory-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000017381.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000017381 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000017383.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000017385.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
